@@ -66,3 +66,14 @@ conductor/
         ├── metadata.json
         ├── spec.md
         └── plan.md
+
+## Getting started (scaffold)
+
+The repository now ships with a Node.js toolchain to run the MCP server locally:
+
+1. Install dependencies with `npm install` (Node.js 20+).
+2. Build the TypeScript sources with `npm run build`.
+3. Start in stdio mode (Claude Code / Codex): `conductor-mcp`.
+4. Start an HTTP placeholder (health endpoint + `/sse` stub): `conductor-mcp --http 8080`.
+
+> The current implementation includes transport scaffolding and logging. MCP tool wiring and HTTP/SSE streaming are tracked as follow-up work.
