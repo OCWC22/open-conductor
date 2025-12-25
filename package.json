@@ -1,0 +1,36 @@
+{
+  "name": "conductor-mcp",
+  "version": "0.1.0",
+  "description": "Deterministic Conductor MCP server with stdio and HTTP/SSE entrypoints.",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "bin": {
+    "conductor-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "test": "vitest run",
+    "start": "node dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "conductor",
+    "stdio",
+    "sse"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.3",
+    "vitest": "^1.2.0"
+  }
+}
